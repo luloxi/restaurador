@@ -1,18 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Restaurador
 
-## Getting Started
+**Plataforma de tokenización de propiedades históricas y activos en desuso sobre Cardano (CIP-0113).**
 
-First, run the development server:
+Restaurador permite comercializar tokens de proyectos de restauración y visualizar cada activo. Los fondos recaudados financian la puesta en valor. Los inversores obtienen retornos vía operación del inmueble.
+
+## Características principales
+- Landing completa orientada a inversores retail e institucionales y propietarios
+- Marketplace interactivo con filtros
+- Detalle de cada proyecto + tokenomics + reglas CIP-0113
+- Flujo completo de compra simulado con wallet Cardano (Lace / Eternl etc.)
+- Portfolio personal
+- Formulario de solicitud para propietarios
+- Diseño elegante patrimonial con paleta verde bosque + crema + cobre
+
+## Demo de la tecnología
+Utiliza el estándar **CIP-0113 Programmable Tokens** de Cardano Foundation para emitir tokens nativos con reglas de cumplimiento embebidas.
+
+Sitio de referencia: [Cardano Programmable Tokens](https://cardanofoundation.org/blog/programmable-tokens-cardano)
+
+## Desarrollo local
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+
+## Deploy
+
+Este proyecto está listo para Vercel.
+
+```bash
+npx vercel
+# o conecta el repositorio en Vercel
+```
+
+## Estructura
+
+- `data/projects.ts` — 5 proyectos mock detallados
+- `app/page.tsx` — SPA completa con todos los flujos
+- Componentes integrados (modales, filtros, simulación de compra)
+
+---
+
+**Nota:** Esta es una demostración conceptual. Los datos y transacciones son simulados.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
